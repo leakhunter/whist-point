@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privatlivspolitik og support for Whist - Point, pointtavlen til dansk whist fra LeakHunter ApS.">
+<title>Whist - Point privatliv</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
+<style>
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; }
+  /* Layout: a single readable column; the app's felt green as the only accent. */
+  :root {
+    --bg: #f7f5ef; --surface: #ffffff; --fg: #1a1f1c; --muted: #5c6560; --line: #e2ddd0; --felt: #1f4d3a;
+    --font: "Open Sans", -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --bg: #121815; --surface: #1b2420; --fg: #edf1ee; --muted: #a3ada8; --line: #2c3833; --felt: #7cc3a1; color-scheme: dark; }
+  }
+  :root[data-theme="dark"] { --bg: #121815; --surface: #1b2420; --fg: #edf1ee; --muted: #a3ada8; --line: #2c3833; --felt: #7cc3a1; color-scheme: dark; }
+  body {
+    background: var(--bg); color: var(--fg); font-family: var(--font); font-size: 16px; line-height: 1.6;
+    padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px));
+    padding-block: 32px 56px;
+  }
+  main { max-width: 680px; margin: 0 auto; display: grid; gap: 22px; }
+  .suits { font-size: 22px; letter-spacing: .3em; color: var(--felt); }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0; text-wrap: balance; }
+  h2 { font-size: 18px; margin: 0 0 6px; text-wrap: balance; }
+  p, ul { margin: 0; max-width: 65ch; }
+  ul { padding-left: 20px; display: grid; gap: 4px; }
+  .lede { color: var(--muted); }
+  section { display: grid; gap: 6px; }
+  .card { background: var(--surface); border: 1px solid var(--line); border-radius: 12px; padding: 18px; display: grid; gap: 6px; }
+  .en { border-top: 1px solid var(--line); padding-top: 22px; color: var(--muted); font-size: 15px; display: grid; gap: 6px; }
+  a { color: var(--felt); font-weight: 600; }
+  footer { color: var(--muted); font-size: 13px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="suits" aria-hidden="true">♠ ♥ ♦ ♣</div>
+  <header style="display:grid;gap:8px">
+    <h1>Whist - Point: privatliv og support</h1>
+    <p class="lede">Whist - Point er en pointtavle til dansk whist, udgivet af LeakHunter ApS. Siden gælder appen på iPhone og iPad.</p>
+  </header>
+
+  <section class="card">
+    <h2>Kort fortalt: vi indsamler ingen data</h2>
+    <ul>
+      <li>Appen har ingen konto og intet login.</li>
+      <li>Spillernavne, runder og point gemmes kun på din egen enhed.</li>
+      <li>Appen sender intet over internettet. Der er ingen reklamer, ingen analyseværktøjer og ingen sporing.</li>
+      <li>LeakHunter ApS har ingen adgang til dine spil.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Deling</h2>
+    <p>Når du trykker "Del", åbner iOS' eget del-ark med stillingen som tekst. Du vælger selv, hvor teksten sendes hen (fx Beskeder eller mail), og det er kun den tekst, der deles.</p>
+  </section>
+
+  <section>
+    <h2>Sletning</h2>
+    <p>Du kan slette et spil under "Tidligere spil" og fjerne navne fra forslagene under "Nyt spil" → "Rediger". Sletter du appen, forsvinder alle data fra enheden.</p>
+  </section>
+
+  <section>
+    <h2>Support</h2>
+    <p>Har du spørgsmål eller fundet en fejl, så kontakt LeakHunter ApS via <a href="https://leakhunter.dk" rel="noopener">leakhunter.dk</a>.</p>
+  </section>
+
+  <section class="en" lang="en">
+    <h2>In English</h2>
+    <p>Whist - Point is a score keeper for the Danish card game Whist, published by LeakHunter ApS. The app collects no data: no account, no network access, no ads, analytics or tracking. Player names and scores are stored only on your device. Sharing happens only when you tap "Del" and choose a destination in the iOS share sheet. Support: <a href="https://leakhunter.dk" rel="noopener">leakhunter.dk</a>.</p>
+  </section>
+
+  <footer>Senest opdateret 24. november 2026 · © 2026 LeakHunter ApS</footer>
+</main>
+</body>
+</html>
